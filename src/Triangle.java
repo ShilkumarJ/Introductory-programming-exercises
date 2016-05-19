@@ -2,8 +2,16 @@
 public class Triangle {
     public static void main(String[] args) {
         Triangle triangle = new Triangle();
-        triangle.printAsterisksHorizontaly(8);
+        triangle.printAsterisksVertically(3);
     }
+
+    private void printAsterisksVertically(int numberOfAsterisks) {
+        for(int i=0; i<numberOfAsterisks;i++){
+            this.printOneAsterisk();
+            System.out.println();
+        }
+    }
+
     private void printAsterisksHorizontaly(int numberOfAsterisks) {
         for (int i = 0; i < numberOfAsterisks; i++) {
             this.printOneAsterisk();
